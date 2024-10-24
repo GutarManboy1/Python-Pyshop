@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<h1>Products</h1>
+<h1>Gunpla</h1>
 <div class="row">
   {% for product in products %}
   <div class="col">
@@ -7,10 +7,8 @@
       <img src="{{product.image_url}}" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">{{product.name}}</h5>
-        <p class="card-text">
-        ¥{{product.price}}
-        </p>
-        <a href="#" class="btn btn-primary">{{Add to Cart}}</a>
+        <p class="card-text">¥{{product.price}}</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
       </div>
     </div>
   </div>
@@ -18,3 +16,8 @@
 </div>
 
 {% endblock %}
+
+<!-- src = "{{product.image.url}}"  -->
+<!-- h5 {{product.name}} -->
+<!-- <p>{{product.price}}</p> -->
+<!-- <a href="">{{Add to Cart}}</a> -->
